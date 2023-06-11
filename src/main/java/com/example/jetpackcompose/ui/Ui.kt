@@ -1,4 +1,4 @@
-package com.example.jetpackcompose
+package com.example.jetpackcompose.ui
 
 import androidx.cardview.widget.CardView
 import androidx.compose.foundation.Image

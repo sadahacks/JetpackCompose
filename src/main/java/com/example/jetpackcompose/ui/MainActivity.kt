@@ -1,12 +1,10 @@
-package com.example.jetpackcompose
+package com.example.jetpackcompose.ui
 
+import MyApp
 import android.os.Bundle
-import android.os.Message
-import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.*
-import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.MaterialTheme
@@ -21,6 +19,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.jetpackcompose.R
 import com.example.jetpackcompose.ui.theme.JetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,7 +29,11 @@ class MainActivity : ComponentActivity() {
             JetpackComposeTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
-                    val scrollState = rememberScrollState()
+
+//                    BirthdayCardUi()
+                    MyApp()
+
+                    /*val scrollState = rememberScrollState()
 //                    Greeting("Android")
                     Column(modifier = Modifier.verticalScroll(scrollState)) {
                         for (i in 1..30){
@@ -38,7 +41,7 @@ class MainActivity : ComponentActivity() {
                         }
 
                         Ui().ImageCard(painter =painterResource(id = R.drawable.sada1) , description = "sada's University Pic", title = "SadaHacks")
-                    }
+                    }*/
 
 
                 }
@@ -112,9 +115,9 @@ fun DefaultPreview() {
 //        Greeting("Android")
 //            MyIntro("Sadaqat Hussain","How are you. I'm in Lahore and doing my job. Inshallah soon we'll meet. How are you. I'm in Lahore and doing my job. Inshallah soon we'll meet")
 
-        Box(modifier = Modifier.width(100.dp)){
-            Ui().ImageCard(painter = painterResource(id = R.drawable.sada1) , description = "sada's University Pic", title = "SadaHacks")
-        }
+//        Box(modifier = Modifier.width(100.dp)){
+//            Ui().ImageCard(painter = painterResource(id = R.drawable.sada1) , description = "sada's University Pic", title = "SadaHacks")
+//        }
 
           }
 }
